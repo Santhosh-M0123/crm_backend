@@ -7,7 +7,7 @@ const port = 8000 || process.env.PORT;
 var cors = require("cors");
 
 app.use(cors({
-  origin: "http://localhost:3001"
+  origin: "*"
 }));
 app.use(express.json()); //to convert request data to json
 
